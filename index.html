@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+
+    <style>
+      .reveal-viewport {
+        background: rgb(242,141,191);
+        background: linear-gradient(133deg, rgba(242,141,191,1) 0%, rgba(251,168,123,1) 51%, rgba(202,255,0,1) 100%);
+      }
+
+      @font-face {
+        font-family: "Japanese Style";
+        src: url('assets/japanese-style.ttf');
+      }
+
+      .japanese {
+        font-family: "Japanese Style" ! important;
+        letter-spacing: 0.2em ! important;
+        font-style: italic ! important;
+      }
+
+      table.kanachart td {
+        line-height: 70%;
+        border-top: none;
+        padding-bottom: unset;
+        text-align: center;
+      }
+
+      table.kanachart td span {
+        font-size: medium;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Introduction</h1>
+          <h6>to</h6>
+          <h1 class="japanese">Japanese</h1>
+        </section>
+        <section>
+          <h2>Disclaimer</h2>
+          <p>I am not a Japanese teacher - I am still learning</p>
+          <img src="https://media.giphy.com/media/QsSFBWemBrjDa/giphy.gif" />
+        </section>
+        <section>
+          <h2>Why Learn Japanese?</h2>
+          <ul>
+            <li>World's third largest economy</li>
+            <li>Culture baked into the language</li>
+            <li>Flows, makes sense, sounds great!</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Why <em>not</em> Learn Japanese?</h2>
+          <ul>
+            <li>Three character sets - including Chinese</li>
+            <li>Offending people is easy</li>
+            <li>Easy to forget if not used</li>
+          </ul>
+        </section>
+        <section>
+          <h2>A Brief History</h2>
+          <p>Chinese characters were adopted between the sixth to ninth century, called kanji</p>
+          <p>By the 12<sup>th</sup> century, hiragana and katakana had been created from kanji</p>
+          <p>This gave the language the freedom it needed to grow</p>
+        </section>
+        <section>
+          <p>Since the mid 18<sup>th</sup> century, "gairaigo" (foreign borrowed words) have been popular in Japan, mainly taken from English</p>
+          <p>There are also words from Portuguese, Dutch and Spanish, thought to have originated from overseas merchants</p>
+        </section>
+        <section>
+          <p>Examples:</p>
+          <ul>
+            <li>テブル / teburu / table</li>
+            <li>ビリ / biru / beer</li>
+            <li>タクシ / takushi / taxi</li>
+            <li>ホテル / hoteru / hotel</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Character Sets</h2>
+          <h6>Hiragana</h6>
+          <h6>Katakana</h6>
+          <h6>Kanji (Chinese characters)</h6>
+          <h6>Rōmaji (romanised)</h6>
+        </section>
+        <section>
+          <h2>hira&centerdot;gana</h2>
+          <p>A phonetic syllabary system</p>
+          <p>"hira" means "ordinary" or "simple"</p>
+          <p>"gana" comes from "kana" meaning "syllabary"</p>
+        </section>
+        <section>
+          <table class="kanachart">
+            <thead>
+              <tr>
+                <th>n</th>
+                <th>w-</th>
+                <th>r-</th>
+                <th>y-</th>
+                <th>m-</th>
+                <th>h-</th>
+                <th>n-</th>
+                <th>t-</th>
+                <th>s-</th>
+                <th>k-</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ん<span>n</span></td>
+                <td>わ<span>wa</span></td>
+                <td>ら<span>ra</span></td>
+                <td>や<span>ya</span></td>
+                <td>ま<span>ma</span></td>
+                <td>は<span>ha</span></td>
+                <td>な<span>na</span></td>
+                <td>た<span>ta</span></td>
+                <td>さ<span>sa</span></td>
+                <td>か<span>ka</span></td>
+                <td>あ<span>a</span></td>
+                <th>a-</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>り<span>ri</span></td>
+                <td></td>
+                <td>み<span>mi</span></td>
+                <td>ひ<span>hi</span></td>
+                <td>に<span>ni</span></td>
+                <td>ち<span>chi</span></td>
+                <td>し<span>shi</span></td>
+                <td>き<span>ki</span></td>
+                <td>い<span>i</span></td>
+                <th>i-</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>る<span>ru</span></td>
+                <td>ゆ<span>yu</span></td>
+                <td>む<span>mu</span></td>
+                <td>ふ<span>fu</span></td>
+                <td>ぬ<span>nu</span></td>
+                <td>つ<span>tsu</span></td>
+                <td>す<span>su</span></td>
+                <td>く<span>ku</span></td>
+                <td>う<span>u</span></td>
+                <th>u-</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>れ<span>re</span></td>
+                <td></td>
+                <td>め<span>me</span></td>
+                <td>へ<span>he</span></td>
+                <td>ね<span>ne</span></td>
+                <td>て<span>te</span></td>
+                <td>せ<span>se</span></td>
+                <td>け<span>ke</span></td>
+                <td>え<span>e</span></td>
+                <th>e-</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td>を<span>wo</span></td>
+                <td>ろ<span>ro</span></td>
+                <td>よ<span>yo</span></td>
+                <td>も<span>mo</span></td>
+                <td>ほ<span>ho</span></td>
+                <td>の<span>no</span></td>
+                <td>と<span>to</span></td>
+                <td>そ<span>so</span></td>
+                <td>こ<span>ko</span></td>
+                <td>お<span>o</span></td>
+                <th>o-</th>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Try it!</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>hiragana</th>
+                <th>rōmaji</th>
+                <th>syllables</th>
+                <th>meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>くるま</td>
+                <td>kuruma</td>
+                <td>Ku Ru Ma</td>
+                <td>Car</td>
+              </tr>
+              <tr>
+                <td>とけい</td>
+                <td>tokei</td>
+                <td>To Ke I</td>
+                <td>Clock</td>
+              </tr>
+              <tr>
+                <td>まんが</td>
+                <td>manga</td>
+                <td>Ma N Ga</td>
+                <td>Manga</td>
+              </tr>
+              <tr>
+                <td>てれび</td>
+                <td>terebi</td>
+                <td>Te Re Bi</td>
+                <td>Television</td>
+              </tr>
+              <tr>
+                <td>しょっく</td>
+                <td>shokku</td>
+                <td>Shyo Ku</td>
+                <td>Shock</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Introduce Yourself</h2>
+          <p>
+            はじめ　まして<br />
+            <small>Ha Ji Me Ma Shi Te</small>
+          </p>
+          <p>
+            &lt;だぶ&gt;　です<br />
+            <small>&lt;Da Bu&gt; De Su</small>
+          </p>
+          <p>
+            よろしく　おねがいします<br />
+            <small>Yo Ro Shi Ku O Ne Ga I Shi Ma Su</small>
+          </p>
+        </section>
+        <section>
+          <h2>Introduce Yourself</h2>
+          <p>
+            はじめ　まして<br />
+            <small>Ha Ji Me Ma Shi Te</small>
+          </p>
+          <p>
+            &lt;だぶ&gt;　です<br />
+            <small>&lt;Da Bu&gt; De Su</small>
+          </p>
+          <p>
+            よろしく　おねがいします<br />
+            <small>Yo Ro Shi Ku O Ne Ga I Shi Ma Su</small>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
