@@ -22,8 +22,12 @@
 
     <style>
       .reveal-viewport {
-        background: rgb(242,141,191);
-        background: linear-gradient(133deg, rgba(242,141,191,1) 0%, rgba(251,168,123,1) 51%, rgba(202,255,0,1) 100%);
+        /* background: rgb(242,141,191); */
+        background: url("assets/wallpaper.png"),
+          linear-gradient(133deg, rgba(242,141,191,1) 0%, rgba(251,168,123,1) 51%, rgba(202,255,0,1) 100%);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
       }
 
       @font-face {
@@ -51,6 +55,12 @@
       table.kanachart td span {
         font-size: medium;
       }
+
+      span.highlight {
+        color: red;
+        text-decoration: underline;
+        text-shadow: 0 0 3px #000000, 0 0 5px #ffffff;
+      }
     </style>
   </head>
   <body>
@@ -60,11 +70,12 @@
           <h2>Introduction</h1>
           <h6>to</h6>
           <h1 class="japanese">Japanese</h1>
+          <p>日本語</p>
         </section>
         <section>
           <h2>Disclaimer</h2>
           <p>I am not a Japanese teacher - I am still learning</p>
-          <img src="https://media.giphy.com/media/QsSFBWemBrjDa/giphy.gif" />
+          <img class="r-stretch" data-src="https://media.giphy.com/media/QsSFBWemBrjDa/giphy.gif" />
         </section>
         <section>
           <h2>Why Learn Japanese?</h2>
@@ -73,10 +84,12 @@
             <li>Culture baked into the language</li>
             <li>Flows, makes sense, sounds great!</li>
           </ul>
+          <img class="r-stretch" data-src="assets/shibuya.jpg">
         </section>
         <section>
           <h2>Why <em>not</em> Learn Japanese?</h2>
           <ul>
+            <li>It's very different from English</li>
             <li>Three character sets - including Chinese</li>
             <li>Offending people is easy</li>
             <li>Easy to forget if not used</li>
@@ -84,22 +97,50 @@
         </section>
         <section>
           <h2>A Brief History</h2>
-          <p>Chinese characters were adopted between the sixth to ninth century, called kanji</p>
-          <p>By the 12<sup>th</sup> century, hiragana and katakana had been created from kanji</p>
+          <p>Chinese characters were adopted 6<sup>th</sup> to 9<sup>th</sup> century, called "kanji"</p>
+          <p>By the 12<sup>th</sup> century, "hiragana" and "katakana" had been created from kanji</p>
           <p>This gave the language the freedom it needed to grow</p>
         </section>
         <section>
-          <p>Since the mid 18<sup>th</sup> century, "gairaigo" (foreign borrowed words) have been popular in Japan, mainly taken from English</p>
-          <p>There are also words from Portuguese, Dutch and Spanish, thought to have originated from overseas merchants</p>
-        </section>
-        <section>
-          <p>Examples:</p>
-          <ul>
-            <li>テブル / teburu / table</li>
-            <li>ビリ / biru / beer</li>
-            <li>タクシ / takushi / taxi</li>
-            <li>ホテル / hoteru / hotel</li>
-          </ul>
+          <section>
+            <p>Since the mid 18<sup>th</sup> century, "gairaigo" (foreign borrowed words) have been used</p>
+            <p>Mainly English</p>
+            <p>Also from Portuguese, Dutch and Spanish</p>
+            <p>Almost always written in katakana</p>
+          </section>
+          <section>
+            <table>
+              <thead>
+                <tr>
+                  <th>Katakana</th>
+                  <th>pronounciation</th>
+                  <th>English</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>テブル</td>
+                  <td>teburu</td>
+                  <td>table</td>
+                </tr>
+                <tr>
+                  <td>ビリ</td>
+                  <td>biru</td>
+                  <td>beer</td>
+                </tr>
+                <tr>
+                  <td>タクシ</td>
+                  <td>takushi</td>
+                  <td>taxi</td>
+                </tr>
+                <tr>
+                  <td>ホテル</td>
+                  <td>hoteru</td>
+                  <td>hotel</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </section>
         <section>
           <h2>Character Sets</h2>
@@ -109,102 +150,104 @@
           <p>... and Rōmaji (romanised)</p>
         </section>
         <section>
-          <h2>hira&centerdot;gana</h2>
-          <p>A phonetic syllabary system</p>
-          <p>"hira" means "ordinary" or "simple"</p>
-          <p>"gana" comes from "kana" meaning "syllabary"</p>
-        </section>
-        <section>
-          <table class="kanachart">
-            <thead>
-              <tr>
-                <th>n</th>
-                <th>w-</th>
-                <th>r-</th>
-                <th>y-</th>
-                <th>m-</th>
-                <th>h-</th>
-                <th>n-</th>
-                <th>t-</th>
-                <th>s-</th>
-                <th>k-</th>
-                <th></th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>ん<span>n</span></td>
-                <td>わ<span>wa</span></td>
-                <td>ら<span>ra</span></td>
-                <td>や<span>ya</span></td>
-                <td>ま<span>ma</span></td>
-                <td>は<span>ha</span></td>
-                <td>な<span>na</span></td>
-                <td>た<span>ta</span></td>
-                <td>さ<span>sa</span></td>
-                <td>か<span>ka</span></td>
-                <td>あ<span>a</span></td>
-                <th>a-</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>り<span>ri</span></td>
-                <td></td>
-                <td>み<span>mi</span></td>
-                <td>ひ<span>hi</span></td>
-                <td>に<span>ni</span></td>
-                <td>ち<span>chi</span></td>
-                <td>し<span>shi</span></td>
-                <td>き<span>ki</span></td>
-                <td>い<span>i</span></td>
-                <th>i-</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>る<span>ru</span></td>
-                <td>ゆ<span>yu</span></td>
-                <td>む<span>mu</span></td>
-                <td>ふ<span>fu</span></td>
-                <td>ぬ<span>nu</span></td>
-                <td>つ<span>tsu</span></td>
-                <td>す<span>su</span></td>
-                <td>く<span>ku</span></td>
-                <td>う<span>u</span></td>
-                <th>u-</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>れ<span>re</span></td>
-                <td></td>
-                <td>め<span>me</span></td>
-                <td>へ<span>he</span></td>
-                <td>ね<span>ne</span></td>
-                <td>て<span>te</span></td>
-                <td>せ<span>se</span></td>
-                <td>け<span>ke</span></td>
-                <td>え<span>e</span></td>
-                <th>e-</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td>を<span>wo</span></td>
-                <td>ろ<span>ro</span></td>
-                <td>よ<span>yo</span></td>
-                <td>も<span>mo</span></td>
-                <td>ほ<span>ho</span></td>
-                <td>の<span>no</span></td>
-                <td>と<span>to</span></td>
-                <td>そ<span>so</span></td>
-                <td>こ<span>ko</span></td>
-                <td>お<span>o</span></td>
-                <th>o-</th>
-              </tr>
-            </tbody>
-          </table>
+          <section>
+            <h2>hira&centerdot;gana</h2>
+            <p>A phonetic syllabary system</p>
+            <p>"hira" means "ordinary" or "simple"</p>
+            <p>"gana" comes from "kana" meaning "syllabary"</p>
+          </section>
+          <section>
+            <table class="kanachart">
+              <thead>
+                <tr>
+                  <th>n</th>
+                  <th>w-</th>
+                  <th>r-</th>
+                  <th>y-</th>
+                  <th>m-</th>
+                  <th>h-</th>
+                  <th>n-</th>
+                  <th>t-</th>
+                  <th>s-</th>
+                  <th>k-</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ん<span>n</span></td>
+                  <td>わ<span>wa</span></td>
+                  <td>ら<span>ra</span></td>
+                  <td>や<span>ya</span></td>
+                  <td>ま<span>ma</span></td>
+                  <td>は<span>ha</span></td>
+                  <td>な<span>na</span></td>
+                  <td>た<span>ta</span></td>
+                  <td>さ<span>sa</span></td>
+                  <td>か<span>ka</span></td>
+                  <td>あ<span>a</span></td>
+                  <th>a-</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>り<span>ri</span></td>
+                  <td></td>
+                  <td>み<span>mi</span></td>
+                  <td>ひ<span>hi</span></td>
+                  <td>に<span>ni</span></td>
+                  <td>ち<span>chi</span></td>
+                  <td>し<span>shi</span></td>
+                  <td>き<span>ki</span></td>
+                  <td>い<span>i</span></td>
+                  <th>i-</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>る<span>ru</span></td>
+                  <td>ゆ<span>yu</span></td>
+                  <td>む<span>mu</span></td>
+                  <td>ふ<span>fu</span></td>
+                  <td>ぬ<span>nu</span></td>
+                  <td>つ<span>tsu</span></td>
+                  <td>す<span>su</span></td>
+                  <td>く<span>ku</span></td>
+                  <td>う<span>u</span></td>
+                  <th>u-</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>れ<span>re</span></td>
+                  <td></td>
+                  <td>め<span>me</span></td>
+                  <td>へ<span>he</span></td>
+                  <td>ね<span>ne</span></td>
+                  <td>て<span>te</span></td>
+                  <td>せ<span>se</span></td>
+                  <td>け<span>ke</span></td>
+                  <td>え<span>e</span></td>
+                  <th>e-</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>を<span>wo</span></td>
+                  <td>ろ<span>ro</span></td>
+                  <td>よ<span>yo</span></td>
+                  <td>も<span>mo</span></td>
+                  <td>ほ<span>ho</span></td>
+                  <td>の<span>no</span></td>
+                  <td>と<span>to</span></td>
+                  <td>そ<span>so</span></td>
+                  <td>こ<span>ko</span></td>
+                  <td>お<span>o</span></td>
+                  <th>o-</th>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </section>
         <section>
           <h2>Try it!</h2>
@@ -252,38 +295,187 @@
           </table>
         </section>
         <section>
-          <h2>Introduce Yourself</h2>
-          <p>
-            はじめ　まして<br />
-            <small>Ha Ji Me Ma Shi Te</small>
-          </p>
-          <p>
-            &lt;your_name&gt;　です<br />
-            <small>&lt;your_name&gt; De Su</small>
-          </p>
-          <p>
-            よろしく　おねがいします<br />
-            <small>Yo Ro Shi Ku O Ne Ga I Shi Ma Su</small>
-          </p>
+          <section>
+            <h2>Introduce Yourself</h2>
+            <p>
+              はじめ　まして<br />
+              <small>
+                Ha Ji Me Ma Shi Te<br />
+                First time we've met
+              </small>
+            </p>
+            <p>
+              &lt;your_name&gt;　で<span class="highlight">す</span><br />
+              <small>
+                &lt;your_name&gt; De <span class="highlight">S</span><br />
+                I'm &lt;your_name&gt;
+              </small>
+            </p>
+            <p>
+              よろしく　おねがいしま<span class="highlight">す</span><br />
+              <small>
+                Yo Ro Shi Ku O Ne Ga I Shi Ma <span class="highlight">S</span><br />
+                Nice to meet you
+              </small>
+            </p>
+          </section>
+          <section>
+            <h2>Ask "How are you?"</h2>
+            <p>
+              おげんき　で<span class="highlight">す</span>か？<br />
+              <small>
+                O Ge N Ki De <span class="highlight">S</span> Ka<br />
+                Are you healthy?
+              </small>
+            </p>
+            <p>
+              げんき　で<span class="highlight">す</span>！<br />
+              <small>
+                Ge N Ki De <span class="highlight">S</span><br />
+                I'm healthy!
+              </small>
+            </p>
+            <p>
+              あなた　<span class="highlight">は</span>？<br />
+              <small>
+                A Na Ta <span class="highlight">Wa</span><br />
+                You?
+              </small>
+            </p>
+            <p>
+              げんき！<br />
+              <small>
+                Ge N Ki<br />
+                Healthy!
+              </small>
+            </p>
+          </section>
+          <section>
+            <h2>Order a Drink</h2>
+            <p>
+              すみません<br />
+              <small>
+                Su Mi Ma Se N<br />
+                Excuse me
+              </small>
+            </p>
+            <p>
+              みず　ください<br />
+              <small>
+                Mi Zu Ku Da Sa I<br />
+                Can I have some water please?
+              </small>
+            </p>
+            <p>
+              ありがとう<br />
+              <small>
+                A Ri Ga To U<br />
+                Thank you
+              </small>
+            </p>
+          </section>
+          <section>
+            <h2>Respond When Asked Your Name</h2>
+            <p>
+              おなまえ　<span class="highlight">は</span>　なんで<span class="highlight">す</span>か？<br />
+              <small>
+                O Na Ma E <span class="highlight">Wa</span> Na N De <span class="highlight">S</span> Ka?<br />
+                What is your name? (polite)
+              </small>
+            </p>
+            <p>
+              &lt;your_name&gt; といい　ま<span class="highlight">す</span><br />
+              <small>
+                &lt;your_name&gt; To I I Ma <span class="highlight">S</span><br />
+                &lt;your_name&gt; is my name
+              </small>
+            </p>
+          </section>
+          <section>
+            <h2>Respond When Asked Where You Are From</h2>
+            <p>
+              しゅっしん <span class="highlight">は</span> どちら　で<span class="highlight">す</span>か？<br />
+              <small>
+                Shu Shin <span class="highlight">Wa</span> Do Chi Ra De <span class="highlight">S</span> Ka<br />
+                Where are you from?
+              </small>
+            </p>
+            <p>
+              わたし <span class="highlight">は</span> イギリス　じん　で<span class="highlight">す</span><br />
+              <small>
+                Wa Ta Shi <span class="highlight">Wa</span> I Gi Ri Su Ji N De <span class="highlight">S</span><br />
+                I am British
+              </small>
+            </p>
+            <p>
+              でも、　アバディーン　に　すんで　いま<span class="highlight">す</span><br />
+              <small>
+                De Mo, A Ba Dei- N Ni Su N De I Ma <span class="highlight">S</span><br />
+                But, I live in Aberdeen
+              </small>
+            </p>
+          </section>
+          <section>
+            <h2>Say You Speak English, Not Japanese</h2>
+            <p>
+              えいご　<span class="highlight">を</span>　はなせま<span class="highlight">す</span><br />
+              <small>
+                E I Go <span class="highlight">O</span> Ha Na Se Ma <span class="highlight">S</span><br />
+                I can speak English
+              </small>
+            </p>
+            <p>
+              にほんご　<span class="highlight">を</span>　はなせません<br />
+              <small>
+                Ni Ho N Go <span class="highlight">O</span> Ha Na Se Ma Se N<br />
+                I can not speak Japanese
+              </small>
+            </p>
+            <p>
+              えいご　<span class="highlight">を</span>　はなせましょう、おねがいしま<span class="highlight">す</span><br />
+              <small>
+                E I Go <span class="highlight">O</span> Ha Na Se Ma Shyo U, O Ne Ga I Shi Ma <span class="highlight">S</span><br />
+                Can we speak English, please?
+              </small>
+            </p>
+          </section>
         </section>
         <section>
-          <h2>Ask "How are you?"</h2>
-          <p>
-            おげんき　ですか？<br />
-            <small>O Ge N Ki De Su Ka</small>
-          </p>
-          <p>
-            げんき　です！<br />
-            <small>Ge N Ki De Su</small>
-          </p>
-          <p>
-            あなた　は？<br />
-            <small>A Na Ta Wa</small>
-          </p>
-          <p>
-            げんき！<br />
-            <small>Ge N Ki</small>
-          </p>
+          <h2>A Conversation!</h2>
+          <ol>
+            <li>Introduce yourselfes to eachother</li>
+            <li>Ask eachother<br />"how are you"?</li>
+            <li>Ask eachother<br />"where are you from"?</li>
+            <li>Tell eachother<br />"I can speak English, not Japanese"?</li>
+          </ol>
+        </section>
+        <section>
+          <section>
+            <h2>Do</h2>
+            <ul>
+              <li>Remember someone's name!</li>
+              <li>Try to be polite<br />(use "please" & "thank you")</li>
+              <li>Carefully inspect a business card,<br />and place it down neatly in front of you</li>
+              <li>Try and learn phrases!</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Don't</h2>
+            <ul>
+              <li>Forget someone's name!</li>
+              <li>Say "you" unless you <em>really</em> have to!</li>
+              <li>Expect anyone to speak English</li>
+              <li>Be afraid to make mistakes 😇</li>
+            </ul>
+          </section>
+          <section>
+            <h1>終わり</h1>
+            <small>
+              おわり - The end
+            </small>
+            </h1>
+            <h6>Questions?</h6>
+          </section>
         </section>
       </div>
     </div>
